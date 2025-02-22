@@ -1,7 +1,7 @@
 name: test&Deploy
 on: push
 jobs:
-  T&D:
+  T_D:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
