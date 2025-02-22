@@ -1,0 +1,22 @@
+name: test&Deploy
+on: push
+jobs:
+  T&D:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: install node.js
+        uses: actions/checkout@v4
+          with:
+             node-version: 18
+      - name: Install dependencies
+        uses: npm ci
+      - name: run lent
+        run: npm run lent
+      - name: test
+        run: npm run test
+      - name: Build
+        run: npm run build
+        
+        
