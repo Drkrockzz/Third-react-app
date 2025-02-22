@@ -8,8 +8,8 @@ jobs:
         uses: actions/checkout@v3
       - name: install node.js
         uses: actions/checkout@v4
-          with:
-             node-version: 18
+        with:
+         node-version: 18
       - name: Install dependencies
         uses: npm ci
       - name: run lent
